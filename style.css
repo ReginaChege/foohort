@@ -1,0 +1,188 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.delicas{
+    color: darkorange;
+}
+.main{
+  background-image: url('images/meatpie.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient();
+  height: 100vh;
+  width: 100%;
+  opacity: 85%;
+}
+
+header a {
+    text-decoration: none;
+  }
+  
+  header {
+    padding: 0 20px;
+    background-color: black;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  #brand {
+    font-weight: bold;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  #brand a {
+    color: whitesmoke;
+  }
+  
+  ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  ul a {
+    color: white;
+  }
+  
+  ul li {
+    padding: 5px;
+    margin-left: 10px;
+  }
+  
+  ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: orange;
+    border-radius: 10px;
+  }
+  
+  #hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  #hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .open .bar2 {
+    opacity: 0;
+  }
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+  }
+  
+  .mobile-menu li {
+    margin-bottom: 10px;
+  }
+  .foods{
+    color: darkorange;
+    margin-left: 200px;
+    margin-top: 100px;
+    font-size: 65px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+  }
+  .hatch{
+    margin-left: 200px;
+    color: white;
+
+  }
+  .palace{
+   
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  .foodie{
+    margin-left: 870px;
+    margin-top: -250px;
+    
+   
+  }
+  .invite{
+    margin-top: 20px;
+    font-size: 22px;
+  
+
+  }
+
+
+  .foods {
+    animation: slide-in 1s forwards;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .hatch{
+    animation: slide-in 2s forwards;
+  }
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+/* 
+  .foodie{
+    animation: spin 3s linear infinite;
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(10deg);
+    }
+    to {
+      transform: rotate(20deg);
+    }
+  } */
+
+  
